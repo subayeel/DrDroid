@@ -9,9 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DrDroid">
-        <activity
-            android:name=".ViewMedicine"
-            android:exported="false" />
+
         <activity
             android:name=".AddMedicineActivity"
             android:exported="false" />
