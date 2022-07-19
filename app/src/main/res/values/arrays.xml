@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <array name="medicine_type">
+        <item>Type</item>
+        <item>Adhesive(s)</item>
+        <item>Capsule(s)</item>
+        <item>Cream(s)</item>
+        <item>Gel(s)</item>
+        <item>Drop(s)</item>
+        <item>Inhalation(s)</item>
+        <item>Lotion(s)</item>
+        <item>Measure(s)</item>
+        <item>Tablet(s)</item>
+        <item>Powder(s)</item>
+        <item>Ointment(s)</item>
+        <item>Soap(s)</item>
+        <item>Solution(s)</item>
+        <item>Spray(s)</item>
+        <item>Suspension(s)</item>
+        <item>Syrup(s)</item>
+    </array>
+    <array name="medicine_time">
+        <item>Time</item>
+        <item>Morning</item>
+        <item>Afternoon</item>
+        <item>Evening</item>
+        <item>Night</item>
+
+    </array>
+</resources>
