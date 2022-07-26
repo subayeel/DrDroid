@@ -118,7 +118,7 @@ public class DBManager extends SQLiteOpenHelper {
     public void updateMedicine(String id,String medicineName,
                              String medDose,
                              String medType,
-                             String medTime) {
+                             String medTime, String isSunday,String isMonday,String isTuesday,String isWednesday, String isThursday, String isFriday, String isSaturday) {
 
         // calling a method to get writable database.
         SQLiteDatabase db = this.getWritableDatabase();
@@ -130,6 +130,13 @@ public class DBManager extends SQLiteOpenHelper {
         cv.put("dose",medDose);
         cv.put("type",medType);
         cv.put("time",medTime);
+        cv.put("isSunday",isSunday);
+        cv.put("isMonday",isMonday);
+        cv.put("isTuesday",isTuesday);
+        cv.put("isWednesday",isWednesday);
+        cv.put("isThursday",isThursday);
+        cv.put("isFriday",isFriday);
+        cv.put("isSaturday",isSaturday);
 
         // on below line we are calling a update method to update our database and passing our values.
         // and we are comparing it with name of our course which is stored in original name variable.
@@ -141,4 +148,6 @@ public class DBManager extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
         db.delete(TABLE_NAME,"name=?",new String[]{medicineName});
     }
+
+
 }

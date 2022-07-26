@@ -88,7 +88,14 @@ public class UpdateActivity extends AppCompatActivity {
                 dbManager.updateMedicine(medId,updateMedicineName.getText().toString(),
                         updateMedDose.getText().toString(),
                         updateMedType.getSelectedItem().toString(),
-                        updateMedTime.getSelectedItem().toString());
+                        updateMedTime.getSelectedItem().toString(),
+                        getSelectedDays(updateIsSunday),
+                        getSelectedDays(updateIsMonday),
+                        getSelectedDays(updateIsTuesday),
+                        getSelectedDays(updateIsWednesday),
+                        getSelectedDays(updateIsThursday),
+                        getSelectedDays(updateIsFriday),
+                        getSelectedDays(updateIsSaturday));
 
                 Toast.makeText(UpdateActivity.this, "Meds Updated", Toast.LENGTH_SHORT).show();
 
@@ -110,6 +117,15 @@ public class UpdateActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+    }
+
+    public String getSelectedDays(CheckBox selectedDay){
+        String temp = "0";
+        if (selectedDay.isChecked()){
+            temp = "1";
+        }
+        return temp;
 
     }
 

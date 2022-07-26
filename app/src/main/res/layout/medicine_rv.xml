@@ -18,12 +18,14 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:text="DOLO"
-            android:textColor="#555555"
-            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textSize="22sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.071" />
+
 
         <TextView
             android:id="@+id/tv_medType"
@@ -35,52 +37,50 @@
 
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.169"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.5" />
+            app:layout_constraintVertical_bias="0.53" />
 
         <TextView
             android:id="@+id/tv_medTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="12:00"
-            android:textColor="#555555"
+            android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.773"
-            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.72"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1" />
 
         <TextView
             android:id="@+id/tv_medDose"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="5"
-            android:textColor="#555555"
+            android:textColor="@color/black"
             android:textSize="14sp"
 
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.35"
+            app:layout_constraintHorizontal_bias="0.062"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.5" />
-
-
+            app:layout_constraintVertical_bias="0.53" />
 
         <View
             android:id="@+id/edit_button"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginRight="10dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="24dp"
             android:background="@drawable/ic_baseline_edit_24"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -95,7 +95,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="2dp"
+                android:layout_marginRight="2dp"
                 android:layout_gravity="center"
                 android:textSize="12sp"
                 android:textColor="#4C4C4C"
@@ -106,8 +106,8 @@
                 android:layout_height="wrap_content"
 
                 android:layout_gravity="center"
-
-                android:layout_marginRight="5dp"
+android:textSize="12sp"
+                android:layout_marginRight="3dp"
                 android:textColor="@color/black"
                 android:padding="2dp"
                 android:text="Sun" />
@@ -118,8 +118,9 @@
                 android:layout_height="wrap_content"
 
                 android:layout_gravity="center"
+                android:textSize="12sp"
 
-                android:layout_marginRight="5dp"
+                android:layout_marginRight="3dp"
                 android:textColor="@color/black"
                 android:padding="2dp"
                 android:text="Mon" />
@@ -129,7 +130,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:layout_marginRight="5dp"
+                android:layout_marginRight="3dp"
+                android:textSize="12sp"
                 android:textColor="@color/black"
                 android:padding="2dp"
                 android:text="Tue" />
@@ -139,7 +141,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:layout_marginRight="5dp"
+                android:layout_marginRight="3dp"
+                android:textSize="12sp"
                 android:textColor="@color/black"
                 android:padding="2dp"
                 android:text="Wed" />
@@ -149,8 +152,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
+                android:textSize="12sp"
 
-                android:layout_marginRight="5dp"
+                android:layout_marginRight="3dp"
                 android:padding="2dp"
                 android:text="Thu" />
 
@@ -159,6 +163,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
+                android:textSize="12sp"
 
                 android:layout_marginRight="5dp"
                 android:padding="2dp"
@@ -169,6 +174,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
+                android:textSize="12sp"
 
                 android:layout_marginRight="5dp"
 
