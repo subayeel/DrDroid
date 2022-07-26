@@ -8,6 +8,16 @@ public class MedicineModal {
     private String medTime;
     private String medType;
 
+    private String isSunday;
+    private String isMonday;
+    private String isTuesday;
+    private String isWednesday;
+    private String isThursday;
+    private String isFriday;
+    private String isSaturday;
+
+
+
     public String getMedId(){
         return medId;
     }
@@ -41,12 +51,52 @@ public class MedicineModal {
         this.medType = medType;
     }
 
-    public MedicineModal(String medId,String medName,String medDose,String medType,String medTime){
+    public String getIsSunday(){return isSunday;}
+    public void setIsSunday(){this.isSunday=isSunday;}
+
+    public String getIsMonday(){return isMonday;}
+    public void setIsMonday(){this.isMonday=isMonday;}
+
+    public String getIsTuesday(){return isTuesday;}
+    public void setIsTuesday(){this.isTuesday=isTuesday;}
+
+    public String getIsWednesday(){return isWednesday;}
+    public void setIsWednesday(){this.isWednesday=isWednesday;}
+
+    public String getIsThursday(){return isThursday;}
+    public void setIsThursday(){this.isThursday=isThursday;}
+
+    public String getIsFriday(){return isFriday;}
+    public void setIsFriday(){this.isFriday=isFriday;}
+
+    public String getIsSaturday(){return isSaturday;}
+    public void setIsSaturday(){this.isSaturday=isSaturday;}
+
+    public  MedicineModal(
+            String medId,
+            String medName,
+            String medDose,
+            String medType,
+            String medTime,
+            String isSunday,
+            String isMonday,
+            String isTuesday,
+            String isWednesday,
+            String isThursday,
+            String isFriday,
+            String isSaturday){
         this.medId = medId;
         this.medName = medName;
         this.medType = medType;
         this.medTime = medTime;
         this.medDose = medDose;
+        this.isSunday = isSunday;
+        this.isMonday = isMonday;
+        this.isTuesday = isTuesday;
+        this.isWednesday = isWednesday;
+        this.isThursday = isThursday;
+        this.isFriday = isFriday;
+        this.isSaturday = isSaturday;
 
     }
 

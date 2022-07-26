@@ -2,22 +2,15 @@ package com.example.drdroid;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.TextView;
-import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
-import java.util.Calendar;
 
 public class AddMedicineActivity extends AppCompatActivity {
  EditText medicineName,medDose;
@@ -82,13 +75,27 @@ public class AddMedicineActivity extends AppCompatActivity {
                 medicineName.getText().toString(),
                 medDose.getText().toString(),
                 medType.getSelectedItem().toString(),
-                medTime.getSelectedItem().toString()
-
+                medTime.getSelectedItem().toString(),
+                getSelectedDays(isSunday),
+                getSelectedDays(isMonday),
+                getSelectedDays(isTuesday),
+                getSelectedDays(isWednesday),
+                getSelectedDays(isThursday),
+                getSelectedDays(isFriday),
+                getSelectedDays(isSaturday)
                 );
 
         Toast.makeText(this,res,Toast.LENGTH_LONG).show();
 
 
     }
+    public String getSelectedDays(CheckBox selectedDay){
+        String temp = "0";
+        if (selectedDay.isChecked()){
+            temp = "1";
+        }
+        return temp;
 
-}
+    }
+    }
+
